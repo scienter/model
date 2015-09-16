@@ -1,0 +1,37 @@
+[Parameter]
+ dimension=2
+ max_step=5000
+ save_step=500
+ save_start=0
+
+ calculation_mode=ponderomotive_scattering
+
+ background_density=5e24
+
+[Ponderomotive_Scattering]
+ density=1e28
+ minX=1e-5
+ maxX=1.01e-5
+ minY=-50e-9
+ maxY=50e-9
+
+ lambda=1e-6
+ division_lambda=100
+ dy_over_dx=2
+ dz_over_dx=2
+
+ number_in_cell=100
+ x0=0
+ y0=0
+ Px0=0
+ Py0=0
+
+[Laser]
+ a0=2
+ sigmaX=4e-6
+ sigmaY=4e-6
+
+ minX=0
+ maxX=4e-5
+ minY=-2e-5
+ maxY=2e-5
