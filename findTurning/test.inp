@@ -1,0 +1,13 @@
+[Parameter]
+  dimension=2
+  final_step=2000
+  save_step=100
+
+  x0=-50e-9
+  rangeX=100e-9
+
+  dt=3.33e-17
+  density=1e28
+  totalCnt=5000
+  temperature=1e4
+
