@@ -1,0 +1,35 @@
+[Parameter]
+ dimension=2
+ minX=0.0
+ maxX=100e-6
+ minY=-50e-6
+ maxY=50e-6
+ nx=200
+ ny=200
+
+
+[Electrode]
+ potential=100
+ nodes=4
+ 
+ x0=10e-6
+ y0=20e-6
+ x1=80e-6
+ y1=10e-6
+ x2=80e-6
+ y2=20e-6
+ x3=10e-6
+ y3=30e-6
+
+[Electrode]
+ potential=-100
+ nodes=4
+ 
+ x0=10e-6
+ y0=-20e-6
+ x1=80e-6
+ y1=-10e-6
+ x2=80e-6
+ y2=-20e-6
+ x3=10e-6
+ y3=-30e-6

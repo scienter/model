@@ -1,6 +1,6 @@
 EXEC = show
 CC = gcc 
-OBJS = main.o parameterSetting.o findparam.o boundary.o
+OBJS = main.o parameterSetting.o findparam.o boundary.o saveFile.o
 INCL = parameter.h
 LIBS = -lm
 $(EXEC):$(OBJS)

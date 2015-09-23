@@ -20,6 +20,8 @@ int main(int argc, char *argv[])
 
    //parameter setting
    parameterSetting(&D,argv[1]);
+   boundary(&D);
+   saveField(&D,iteration);
 /*   
      while(iteration<=D.finalStep)
      {

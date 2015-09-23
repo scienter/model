@@ -29,18 +29,11 @@ typedef struct _Parameter
    float maxX;
    float minY;
    float maxY;
-   float ***Ex;
-   float ***Ey;
-   float ***Ez;
+   float ***V;
+   float ***M;
 
-   int Enodes;
-   int Mnodes;  
-   float **elec;
-   float **magnet;
-   float Epot;
-   float Mpot;
-
-
+   struct _LoadList *EloadList;
+   struct _LoadList *MloadList;
    struct _ptclList *head;
 
 }  Parameter; 
@@ -64,17 +57,14 @@ typedef struct _ptclList  {
 }  ptclList;    
 
  
-typedef struct _Laser  {
-    float sigmaX;
-    float sigmaY;
-    float sigmaZ;
-    float a0;
-    float minX;
-    float maxX;
-    float minY;
-    float maxY;
-    float minZ;
-    float maxZ;
-}  Laser;     
+typedef struct _LoadList  {
+   int nodes;
+   float **points;
+   float pot;
+   struct _LoadList *next;
+   
+}  LoadList;     
 
 void parameterSetting(Parameter *D,char *input);
+void boundary(Parameter *D);
+void saveField(Parameter *D,int iteration);
