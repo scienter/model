@@ -22,9 +22,14 @@ int main(int argc, char *argv[])
    parameterSetting(&D,argv[1]);
    boundary(&D);
    saveField(&D,iteration);
+
+   while(iteration<=D.finalStep)
+   {
+     
+
+
+   }
 /*   
-     while(iteration<=D.finalStep)
-     {
        t=iteration*PS.dt;
        
        if(iteration%D.saveStep==0)
